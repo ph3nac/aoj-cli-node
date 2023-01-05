@@ -1,2 +1,3 @@
 *.json
 *rc*
+node_modules

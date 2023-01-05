@@ -1,5 +1,6 @@
 import figlet from "figlet";
 import { Command } from "commander";
+import { init } from "./cmd/init";
 
 const program = new Command();
 
@@ -10,6 +11,7 @@ program
   .description("Initialize configuration")
   .action(() => {
     console.log(figlet.textSync("AOJ CLI TOOLS"));
+    init();
     console.log("init!");
   });
 
